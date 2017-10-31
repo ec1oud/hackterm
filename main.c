@@ -28,7 +28,6 @@
 #include <time.h>
 #include "regis.h"
 #include <stdbool.h>
-#include "ssh.h"
 #include "local.h"
 #include "inlinedata.h"
 #include "ngui.h"
@@ -1386,11 +1385,6 @@ int main(int argc, char **argv) {
     c_resize = &local_resize;
   } else
   if(connection_type == CONNECTION_SSH) {
-    c_open   = &ssh_open;
-    c_close  = &ssh_close;
-    c_write  = &ssh_write;
-    c_read   = &ssh_read;
-    c_resize = &ssh_resize;
   }
     
   do_sdl_init();
