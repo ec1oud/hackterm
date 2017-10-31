@@ -9,7 +9,7 @@ build/SDL_x11video.lo: src/video/x11/SDL_x11video.c include/SDL_config.h \
  include/SDL_cpuinfo.h include/SDL_endian.h include/SDL_surface.h \
  src/video/x11/SDL_x11video.h include/SDL_keycode.h \
  include/SDL_scancode.h /usr/include/dbus-1.0/dbus/dbus.h \
- /usr/lib/x86_64-linux-gnu/dbus-1.0/include/dbus/dbus-arch-deps.h \
+ /usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
  /usr/include/dbus-1.0/dbus/dbus-macros.h \
  /usr/include/dbus-1.0/dbus/dbus-address.h \
  /usr/include/dbus-1.0/dbus/dbus-types.h \
@@ -24,6 +24,7 @@ build/SDL_x11video.lo: src/video/x11/SDL_x11video.c include/SDL_config.h \
  /usr/include/dbus-1.0/dbus/dbus-pending-call.h \
  /usr/include/dbus-1.0/dbus/dbus-server.h \
  /usr/include/dbus-1.0/dbus/dbus-signature.h \
+ /usr/include/dbus-1.0/dbus/dbus-syntax.h \
  /usr/include/dbus-1.0/dbus/dbus-threads.h src/video/x11/SDL_x11dyn.h \
  src/video/x11/SDL_x11sym.h src/video/x11/SDL_x11clipboard.h \
  src/video/x11/SDL_x11events.h src/video/x11/SDL_x11keyboard.h \
@@ -31,4 +32,5 @@ build/SDL_x11video.lo: src/video/x11/SDL_x11video.c include/SDL_config.h \
  src/video/x11/SDL_x11opengl.h include/SDL_opengl.h \
  src/video/x11/SDL_x11window.h src/video/x11/SDL_x11framebuffer.h \
  src/video/x11/SDL_x11shape.h src/video/x11/SDL_x11touch.h \
- src/video/x11/SDL_x11xinput2.h include/SDL_loadso.h
+ src/video/x11/SDL_x11xinput2.h src/video/x11/SDL_x11opengles.h \
+ include/SDL_loadso.h

@@ -20,4 +20,5 @@ build/SDL_sysjoystick.lo: src/joystick/linux/SDL_sysjoystick.c \
  src/joystick/linux/../../events/SDL_mouse_c.h include/SDL_mouse.h \
  src/joystick/linux/../../events/SDL_touch_c.h \
  src/joystick/linux/../../events/../../include/SDL_touch.h \
- src/joystick/linux/../../events/SDL_windowevents_c.h
+ src/joystick/linux/../../events/SDL_windowevents_c.h \
+ include/SDL_loadso.h

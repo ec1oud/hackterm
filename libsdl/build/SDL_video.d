@@ -24,4 +24,5 @@ build/SDL_video.lo: src/video/SDL_video.c include/SDL_config.h \
  include/SDL_mouse.h src/video/../events/SDL_touch_c.h \
  src/video/../events/../../include/SDL_touch.h \
  src/video/../events/SDL_windowevents_c.h include/SDL_opengl.h \
- include/SDL_syswm.h src/video/x11/SDL_x11messagebox.h
+ include/SDL_opengles.h include/SDL_syswm.h \
+ src/video/x11/SDL_x11messagebox.h

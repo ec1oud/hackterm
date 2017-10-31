@@ -16,13 +16,13 @@ distdir = SDL2-2.0.0
 distfile = $(distdir).tar.gz
 
 
-SHELL	= /bin/bash
+SHELL	= /bin/sh
 CC      = gcc
 INCLUDE = -I./include
 CFLAGS  = -g -O3 -DUSING_GENERATED_CONFIG_H
-EXTRA_CFLAGS = -I./include  -mmmx -m3dnow -msse -msse2 -fvisibility=hidden  -D_REENTRANT    -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include   -D_REENTRANT -DHAVE_LINUX_VERSION_H -Wall
+EXTRA_CFLAGS = -I./include  -mmmx -m3dnow -msse -msse2 -fvisibility=hidden  -D_REENTRANT  -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -D_REENTRANT -DHAVE_LINUX_VERSION_H -Wall
 LDFLAGS = 
-EXTRA_LDFLAGS =  -lm -ldl -lpthread
+EXTRA_LDFLAGS =  -lm -ldl -lts -lpthread
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 INSTALL = /usr/bin/install -c
 AR	= ar

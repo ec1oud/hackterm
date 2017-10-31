@@ -14,7 +14,7 @@ build/SDL_x11window.lo: src/video/x11/SDL_x11window.c \
  include/SDL_touch.h src/video/x11/../../events/SDL_mouse_c.h \
  include/SDL_mouse.h src/video/x11/SDL_x11video.h \
  /usr/include/dbus-1.0/dbus/dbus.h \
- /usr/lib/x86_64-linux-gnu/dbus-1.0/include/dbus/dbus-arch-deps.h \
+ /usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
  /usr/include/dbus-1.0/dbus/dbus-macros.h \
  /usr/include/dbus-1.0/dbus/dbus-address.h \
  /usr/include/dbus-1.0/dbus/dbus-types.h \
@@ -29,11 +29,13 @@ build/SDL_x11window.lo: src/video/x11/SDL_x11window.c \
  /usr/include/dbus-1.0/dbus/dbus-pending-call.h \
  /usr/include/dbus-1.0/dbus/dbus-server.h \
  /usr/include/dbus-1.0/dbus/dbus-signature.h \
+ /usr/include/dbus-1.0/dbus/dbus-syntax.h \
  /usr/include/dbus-1.0/dbus/dbus-threads.h src/video/x11/SDL_x11dyn.h \
  src/video/x11/SDL_x11sym.h src/video/x11/SDL_x11clipboard.h \
  src/video/x11/SDL_x11events.h src/video/x11/SDL_x11keyboard.h \
  src/video/x11/SDL_x11modes.h src/video/x11/SDL_x11mouse.h \
  src/video/x11/SDL_x11opengl.h include/SDL_opengl.h \
  src/video/x11/SDL_x11window.h src/video/x11/SDL_x11shape.h \
- include/SDL_video.h src/video/x11/SDL_x11xinput2.h include/SDL_timer.h \
- include/SDL_syswm.h include/SDL_version.h include/SDL_assert.h
+ include/SDL_video.h src/video/x11/SDL_x11xinput2.h \
+ src/video/x11/SDL_x11opengles.h include/SDL_timer.h include/SDL_syswm.h \
+ include/SDL_version.h include/SDL_assert.h

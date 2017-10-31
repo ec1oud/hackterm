@@ -7,7 +7,7 @@ build/SDL_x11framebuffer.lo: src/video/x11/SDL_x11framebuffer.c \
  include/SDL_error.h include/SDL_rwops.h include/SDL_surface.h \
  include/SDL_blendmode.h include/SDL_shape.h \
  /usr/include/dbus-1.0/dbus/dbus.h \
- /usr/lib/x86_64-linux-gnu/dbus-1.0/include/dbus/dbus-arch-deps.h \
+ /usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
  /usr/include/dbus-1.0/dbus/dbus-macros.h \
  /usr/include/dbus-1.0/dbus/dbus-address.h \
  /usr/include/dbus-1.0/dbus/dbus-types.h \
@@ -22,6 +22,7 @@ build/SDL_x11framebuffer.lo: src/video/x11/SDL_x11framebuffer.c \
  /usr/include/dbus-1.0/dbus/dbus-pending-call.h \
  /usr/include/dbus-1.0/dbus/dbus-server.h \
  /usr/include/dbus-1.0/dbus/dbus-signature.h \
+ /usr/include/dbus-1.0/dbus/dbus-syntax.h \
  /usr/include/dbus-1.0/dbus/dbus-threads.h src/video/x11/SDL_x11dyn.h \
  src/video/x11/SDL_x11sym.h src/video/x11/SDL_x11clipboard.h \
  src/video/x11/SDL_x11events.h src/video/x11/SDL_x11keyboard.h \
