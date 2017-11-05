@@ -167,8 +167,6 @@ VTermScreenCell *grab_row(int trow,bool *dont_free,int *len) {
   return rowdata;
 }
 
-VTermScreenCell c_screen_data[1000][1000];
-
 bool cdf =true;
 
 bool cellcompare(VTermScreenCell a,VTermScreenCell b) {
@@ -187,16 +185,6 @@ bool cellcompare(VTermScreenCell a,VTermScreenCell b) {
 }
 
 void draw_row(VTermScreenCell *row,int crow,int ypos,int glen) {
-/*
-    if(cdf==true) {
-        for(int n=0;n<1000;n++){
-            for(int i=0;i<1000;i++) {
-                c_screen_data[n][i].chars[0]=0;
-            }
-        }
-    }
-    cdf=false;
- */
   int xpos=0;
 
   for(int n=0;n<cols;n++) {
@@ -210,20 +198,17 @@ void draw_row(VTermScreenCell *row,int crow,int ypos,int glen) {
     VTermColor fg = row[n].fg;
     VTermColor bg = row[n].bg;
 
-    //if(cellcompare(c_screen_data[crow][n],row[n]) == false) {
-      if(row[n].attrs.blink == 1) any_blinking = true;
-      draw_unitext_fancy_renderer(renderer,xpos,ypos,rtext,(bg.red << 24) + (bg.green << 16) + (bg.blue << 8) + 0xff,
-                                                (fg.red << 24) + (fg.green << 16) + (fg.blue << 8) + 0xff,
-                                                row[n].attrs.bold,
-                                                row[n].attrs.underline,
-                                                row[n].attrs.italic,
-                                                row[n].attrs.blink,
-                                                row[n].attrs.reverse,
-                                                row[n].attrs.strike,
-                                                row[n].attrs.font);
-    //}
-    //c_screen_data[crow][n] = row[n];
-      
+    if(row[n].attrs.blink == 1) any_blinking = true;
+    draw_unitext_fancy_renderer(renderer,xpos,ypos,rtext,(bg.red << 24) + (bg.green << 16) + (bg.blue << 8) + 0xff,
+                                              (fg.red << 24) + (fg.green << 16) + (fg.blue << 8) + 0xff,
+                                              row[n].attrs.bold,
+                                              row[n].attrs.underline,
+                                              row[n].attrs.italic,
+                                              row[n].attrs.blink,
+                                              row[n].attrs.reverse,
+                                              row[n].attrs.strike,
+                                              row[n].attrs.font);
+
     xpos+=(nunifont_width+nunifont_space);
     if(row[n].width == 2) {xpos +=(nunifont_width+nunifont_space);n++;}
   }
